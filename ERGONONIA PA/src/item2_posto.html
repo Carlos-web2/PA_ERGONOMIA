@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 2: Posto de Trabalho - PA Ergonomia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Item 2: Posto de Trabalho e Antropometria</h1>
+        <p>Dimensionamento Ergonômico de Mobiliário Baseado na ISO/TS 20646 e NR-17</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="item1_ambiente.html">1. Condições Ambientais</a>
+        <a href="item2_posto.html">2. Posto de Trabalho</a>
+        <a href="item3_pausas.html">3. Pausas e Fadiga</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+
+    <div class="container">
+        <h2>1. Antropometria e Biomecânica Aplicada ao Mobiliário</h2>
+        <p>O posto de trabalho computacional constitui um sistema complexo onde o operador interage com superfícies de apoio, assentos, telas e periféricos. O dimensionamento inadequado deste sistema obriga o corpo humano a adaptações posturais forçadas, gerando torques articulares elevados e sobrecarga estática na musculatura paravertebral e cervical.</p>
+
+        <h3>1.1. A Variabilidade Antropométrica e a População Usuária</h3>
+        <p>A população apresenta ampla diversidade de dimensões corporais (estatura, comprimento de membros, larguras biacromiais). Por conseguinte, projetar postos de trabalho estáticos é um equívoco conceitual grave. A norma técnica <strong>ISO/TS 20646</strong> estabelece que os elementos do posto devem ser adaptáveis (reguláveis) para acomodar desde percentis inferiores até superiores da população usuária.</p>
+
+        <h3>1.2. Posturas Neutras e Ângulos Biomecânicos Ótimos</h3>
+        <p>Em consonância com as prescrições da <strong>NR-17</strong>, o mobiliário deve garantir posturas neutras. Os ângulos articulares recomendados incluem: quadris, joelhos e cotovelos flexionados a aproximadamente 90 graus; pés firmemente apoiados no piso ou em suporte específico; e a linha de visão direcionada para o terço superior do monitor, evitando flexão cervical acentuada.</p>
+
+        <h2>2. Diretrizes da ISO/TS 20646 e NR-17 para Superfícies de Trabalho</h2>
+        <p>O plano de trabalho deve possuir altura compatível com a tarefa e profundidade suficiente para acomodar os dispositivos de entrada e visualização de forma organizada. Cadeiras ergonômicas devem dispor de mecanismos de regulagem de altura do assento, apoio lombar ajustável e braços reguláveis para descarregar o peso dos ombros.</p>
+
+        <h3>2.1. Posicionamento de Monitores e Periféricos (ISO 9241)</h3>
+        <p>Segundo a série <strong>ISO 9241</strong>, o monitor deve ser posicionado a uma distância que evite o esforço de acomodação visual (habitualmente entre 50 cm e 70 cm), com o topo da tela alinhado à altura dos olhos do operador.</p>
+
+        <h2>3. Calculadora Antropométrica Computacional</h2>
+        <p>Insira a estatura do usuário para calcular as dimensões paramétricas recomendadas para assentos e planos de trabalho com base em proporções biomecânicas validadas:</p>
+
+        <div class="form-group">
+            <label for="altura">Altura do Usuário (cm):</label>
+            <input type="number" id="altura" placeholder="Ex: 175">
+        </div>
+
+        <button onclick="calcularPosto()">Calcular Parâmetros Antropométricos</button>
+
+        <div id="resultadoPosto" class="result" style="margin-top: 1.5rem;"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de PA | ETEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

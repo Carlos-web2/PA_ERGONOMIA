@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 3: Pausas e Fadiga - PA Ergonomia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Item 3: Gestão de Pausas e Fadiga Operacional</h1>
+        <p>Mitigação de LER/DORT e Sobrecarga Cognitiva conforme a ISO/TS 20646</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="item1_ambiente.html">1. Condições Ambientais</a>
+        <a href="item2_posto.html">2. Posto de Trabalho</a>
+        <a href="item3_pausas.html">3. Pausas e Fadiga</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+
+    <div class="container">
+        <h2>1. Fisiologia da Fadiga Física e Mental</h2>
+        <p>A execução contínua e ininterrupta de tarefas em terminais computacionais desencadeia dois fenômenos paralelos e cumulativos: a fadiga física localizada — decorrente da contração estática prolongada da musculatura estabilizadora — e a fadiga mental ou cognitiva, associada à atenção sustentada e ao processamento contínuo de dados.</p>
+
+        <h3>1.1. Sobrecarga Estática e Distúrbios Osteomusculares (LER/DORT)</h3>
+        <p>Quando um músculo permanece contraído por longos períodos sem intervalos de relaxamento, ocorre compressão dos capilares sanguíneos locais, gerando hipóxia tecidual, acúmulo de metabólitos ácidos e microlesões nas fibras musculares e tendíneas. Esse mecanismo fisiológico constitui a base para o surgimento dos Distúrbios Osteomusculares Relacionados ao Trabalho (LER/DORT).</p>
+
+        <h3>1.2. Sobrecarga Cognitiva e Fadiga Visual</h3>
+        <p>O processamento informacional contínuo esgota os recursos atencionais do sistema nervoso central, provocando queda de vigilância, lentidão no tempo de resposta e aumento exponencial na taxa de erros operacionais. Paralelamente, o piscar reduzido durante o uso de telas gera ressecamento da córnea e fadiga ocular severa.</p>
+
+        <h2>2. O Papel Estratégico das Pausas Ativas e Micro-pausas</h2>
+        <p>Para contrabalançar os efeitos da fadiga, as diretrizes internacionais da <strong>ISO/TS 20646</strong> preconizam a introdução sistemática de pausas estruturadas e micro-pausas na rotina de trabalho. Essas pausas permitem a reoxigenação dos tecidos musculares, a recuperação do tônus postural e o restabelecimento da capacidade atencional.</p>
+
+        <h3>2.1. Diretrizes da NR-17 para Gestão de Cargas e Pausas</h3>
+        <p>A legislação brasileira (NR-17) reforça a obrigatoriedade de pausas específicas para atividades que exijam sobrecarga mental ou motora repetitiva, garantindo a preservação da integridade psicofisiológica do trabalhador ou estudante.</p>
+
+        <h2>3. Temporizador Ergonômico de Controle de Ciclos</h2>
+        <p>Utilize a aplicação interativa abaixo para gerenciar seus blocos de foco intelectual e assegurar a realização de pausas preventivas regulares:</p>
+        
+        <div style="text-align: center; margin: 2rem 0;">
+            <span id="timerDisplay" style="font-size: 3.5rem; font-weight: bold; color: #004a8d;">25:00</span>
+        </div>
+
+        <div style="text-align: center; display: flex; justify-content: center; gap: 1rem;">
+            <button onclick="iniciarPausa()">Iniciar Ciclo de Foco</button>
+            <button onclick="pausarTimer()" style="background-color: #d9534f;">Pausar</button>
+            <button onclick="resetarTimer()" style="background-color: #6c757d;">Reiniciar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de PA | ETEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

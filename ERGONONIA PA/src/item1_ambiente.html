@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 1: Condições Ambientais - PA Ergonomia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Item 1: Condições Ambientais de Trabalho e Estudo</h1>
+        <p>Análise de Iluminância, Conforto Acústico e Térmico sob a Égide da NR-17 e ISO 8995-1</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="item1_ambiente.html">1. Condições Ambientais</a>
+        <a href="item2_posto.html">2. Posto de Trabalho</a>
+        <a href="item3_pausas.html">3. Pausas e Fadiga</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+
+    <div class="container">
+        <h2>1. Fatores Ambientais e o Conforto Psicofisiológico</h2>
+        <p>O ambiente físico em que se desenvolvem atividades intelectuais e operacionais exerce influência direta sobre o desempenho cognitivo e a incidência de fadiga psicofisiológica. A interação entre o organismo humano e os estímulos físicos do entorno deve ser rigorosamente controlada para evitar patologias ocupacionais e quedas no rendimento produtivo.</p>
+
+        <h3>1.1. Iluminância e Acuidade Visual (NR-17 e ISO 8995-1)</h3>
+        <p>A luz inadequada — seja por deficit (sub-iluminação) ou por excesso com reflexos especulares (ofuscamento) — obriga o sistema visual a esforço muscular intraocular excessivo, provocando astenopia (fadiga visual), cefaleias tensionais e adoção de posturas compensatórias nocivas na coluna cervical. Conforme as especificações da norma internacional <strong>ISO 8995-1</strong> e as diretrizes da <strong>NR-17</strong>, postos administrativos e de estudo exigem níveis mínimos de iluminância geralmente fixados em 300 lux, com distribuição homogênea e controle de contrastes excessivos.</p>
+
+        <h3>1.2. Conforto Acústico e Interferência na Concentração</h3>
+        <p>O ruído ambiental atua como um potente agente estressor psicossocial e fisiológico. Níveis elevados de pressão sonora afetam o sistema nervoso autônomo, elevando a liberação de cortisol, prejudicando a memória de trabalho e reduzindo a capacidade de concentração em tarefas de alta complexidade intelectual. A gestão acústica visa manter os limiares dentro de faixas confortáveis para ambientes fechados, prevenindo danos auditivos e fadiga mental.</p>
+
+        <h3>1.3. Conforto Térmico e Renovação do Ar</h3>
+        <p>Variáveis como temperatura do ar, velocidade de escoamento e umidade relativa exercem papel determinante na termorregulação humana. Desvios significativos da zona de conforto térmico provocam desconforto generalizado, letargia e aumento da taxa de erros operacionais.</p>
+
+        <h2>2. Metodologia de Mensuração e Limites de Tolerância</h2>
+        <p>A avaliação in loco das condições ambientais exige instrumentos calibrados, tais como luxímetros digitais para a quantificação da iluminância em lúmens por metro quadrado e decibelímetros para aferição dos níveis de pressão sonora em decibéis (dB). Os dados coletados são confrontados diretamente com as matrizes normativas vigentes.</p>
+
+        <h2>3. Simulador Interativo de Conformidade Ambiental</h2>
+        <p>Insira abaixo os dados mensurados em seu ambiente de estudo ou trabalho para realizar o diagnóstico automatizado de conformidade com os parâmetros normativos:</p>
+
+        <div class="form-group">
+            <label for="lux">Nível de Iluminância Mensurado (Lux):</label>
+            <input type="number" id="lux" placeholder="Ex: 350">
+        </div>
+
+        <div class="form-group">
+            <label for="db">Nível de Ruído Mensurado (dB):</label>
+            <input type="number" id="db" placeholder="Ex: 55">
+        </div>
+
+        <button onclick="avaliarAmbiente()">Executar Análise Normativa</button>
+
+        <div id="resultadoAmbiente" class="result" style="margin-top: 1.5rem;"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de PA | ETEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

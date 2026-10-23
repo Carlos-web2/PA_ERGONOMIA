@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #004a8d;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #cce0ff;
+}
+
+nav {
+    background: #003366;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4da6ff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #004a8d;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.team-list {
+    list-style-type: none;
+    background: #eef4fc;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    border-left: 4px solid #004a8d;
+}
+
+.team-list li {
+    padding: 0.4rem 0;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background: #004a8d;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #003366;
+}
+
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #eef9ee;
+    border-left: 4px solid #28a745;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #222;
+    color: white;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
