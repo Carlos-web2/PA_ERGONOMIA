@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 3: Pausas e Fadiga - PA Ergonomia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Item 3: Gestão de Pausas e Fadiga Operacional</h1>
+        <p>Prevenção da Fadiga Física e Cognitiva em Atividades de Estudo e Trabalho</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="item1_ambiente.html">1. Condições Ambientais</a>
+        <a href="item2_posto.html">2. Posto de Trabalho</a>
+        <a href="item3_pausas.html">3. Pausas e Fadiga</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+    <main class="container">
+
+        <h2 data-referencia="Referência: KROEMER &amp; GRANDJEAN (2005); IIDA (2016).">Fisiologia da Fadiga Física e Mental</h2>
+
+        <p>A execução contínua de tarefas em terminais computacionais pode contribuir para a fadiga física localizada e a fadiga mental. A primeira está relacionada, entre outros fatores, à permanência prolongada em determinadas posturas. A segunda pode estar associada à atenção sustentada, à quantidade de informações processadas e à duração da atividade.</p>
+
+        <h3 data-referencia="Referência: NR-17 (2022); DUL &amp; WEERDMEESTER (2012).">1.1. Sobrecarga Estática e Distúrbios Osteomusculares (LER/DORT)</h3>
+
+        <p>A manutenção prolongada de posturas e movimentos repetitivos, especialmente quando combinada com condições inadequadas de trabalho, pode contribuir para o aparecimento de desconfortos e distúrbios osteomusculares. A prevenção envolve a adequação do posto, a organização das tarefas e a possibilidade de recuperação durante a jornada.</p>
+
+        <h3 data-referencia="Referência: ISO 9241-11 (2018); IIDA (2016).">1.2. Sobrecarga Cognitiva e Fadiga Visual</h3>
+
+        <p>Atividades que exigem atenção contínua podem provocar cansaço, redução da concentração e aumento da percepção de esforço. O uso prolongado de telas também pode estar associado a sintomas de desconforto ocular. A organização das tarefas, as condições de iluminação e as pausas são aspectos importantes da prevenção.</p>
+
+        <h2 data-referencia="Referência: NR-17 (Ministério do Trabalho e Previdência, 2022).">2. O Papel Estratégico das Pausas e da Alternância de Tarefas</h2>
+
+        <p>A organização adequada do trabalho deve considerar períodos de recuperação, alternância de atividades quando possível e condições que permitam variar a postura. As pausas devem respeitar as exigências da atividade e as disposições legais aplicáveis, não existindo um único intervalo universal adequado a todas as situações.</p>
+
+        <h3 data-referencia="Referência: DUL, Jan; WEERDMEESTER, Bernard. Ergonomia prática, 2012.">2.1. Diretrizes para Gestão de Cargas e Pausas</h3>
+
+        <p>A gestão ergonômica deve considerar as demandas físicas e cognitivas da atividade. A avaliação das pausas deve observar os requisitos normativos aplicáveis ao trabalho realizado, sem presumir que um temporizador genérico substitua os intervalos legalmente previstos.</p>
+
+        <section class="comparison-section">
+            <h3 data-referencia="Referência: Elaborado pela equipe (2026) com base em princípios ergonômicos.">Quadro 4 — Comparação das estratégias de recuperação</h3>
+
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <caption>Estratégias para reduzir os efeitos da fadiga</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Estratégia</th>
+                            <th scope="col">Objetivo</th>
+                            <th scope="col">Exemplo de aplicação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Micropausas</td>
+                            <td>Interromper brevemente a atividade contínua.</td>
+                            <td>Fazer pequenas interrupções entre tarefas.</td>
+                        </tr>
+                        <tr>
+                            <td>Pausas programadas</td>
+                            <td>Permitir recuperação física e mental.</td>
+                            <td>Organizar intervalos de acordo com a atividade.</td>
+                        </tr>
+                        <tr>
+                            <td>Alternância de tarefas</td>
+                            <td>Variar as exigências físicas e cognitivas.</td>
+                            <td>Intercalar atividades compatíveis com a rotina.</td>
+                        </tr>
+                        <tr>
+                            <td>Descanso visual</td>
+                            <td>Reduzir a exposição visual contínua.</td>
+                            <td>Desviar periodicamente o olhar da tela.</td>
+                        </tr>
+                        <tr>
+                            <td>Movimentação corporal</td>
+                            <td>Evitar permanência prolongada na mesma postura.</td>
+                            <td>Levantar-se e movimentar-se durante intervalos apropriados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="table-note">Fonte: elaborado pela equipe do projeto (2026), com base em princípios gerais de ergonomia.</p>
+        </section>
+
+        <h2 data-referencia="Referência: Ferramenta interativa de apoio à gestão de tempo (2026).">3. Temporizador Ergonômico de Controle de Ciclos</h2>
+
+        <p>Utilize o temporizador para organizar blocos de concentração e lembrar-se de realizar intervalos de recuperação. O ciclo de 25 minutos é uma configuração de organização pessoal, não uma determinação normativa.</p>
+
+        <div style="text-align: center; margin: 2rem 0;">
+            <span id="timerDisplay" style="font-size: 3.5rem; font-weight: bold; color: #004a8d;" role="timer" aria-live="off">25:00</span>
+        </div>
+
+        <div style="text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <button type="button" onclick="iniciarPausa()">Iniciar Ciclo de Foco</button>
+            <button type="button" onclick="pausarTimer()" style="background-color: #d9534f;">Pausar</button>
+            <button type="button" onclick="resetarTimer()" style="background-color: #6c757d;">Reiniciar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de PA | ETEC</p>
+    </footer>
+
+</body>
+</html>

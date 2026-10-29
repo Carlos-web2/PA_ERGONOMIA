@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item 2: Posto de Trabalho - PA Ergonomia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Item 2: Posto de Trabalho e Antropometria</h1>
+        <p>Dimensionamento Ergonômico de Mobiliário Baseado em Referências Técnicas e na NR-17</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="item1_ambiente.html">1. Condições Ambientais</a>
+        <a href="item2_posto.html">2. Posto de Trabalho</a>
+        <a href="item3_pausas.html">3. Pausas e Fadiga</a>
+        <a href="referencias.html">Referências</a>
+    </nav>
+
+    <main class="container">
+
+        <h2 data-referencia="Referência: ISO/TS 20646 (2014); KROEMER &amp; GRANDJEAN (2005).">Antropometria e Biomecânica Aplicada ao Mobiliário</h2>
+
+        <p>O posto de trabalho computacional constitui um sistema complexo no qual o operador interage com superfícies de apoio, assentos, telas e periféricos. O dimensionamento inadequado pode exigir adaptações posturais desfavoráveis e contribuir para desconforto e sobrecarga muscular.</p>
+
+        <h3 data-referencia="Referência: IIDA, Itiro. Ergonomia: projeto e produção, 2016.">1.1. A Variabilidade Antropométrica e a População Usuária</h3>
+
+        <p>A população apresenta ampla diversidade de dimensões corporais, como estatura, comprimento dos membros e largura dos ombros. Por esse motivo, o mobiliário deve permitir ajustes que considerem as características do usuário e as exigências da tarefa. A regulagem ajuda a acomodar diferentes pessoas, em vez de pressupor que exista uma única configuração adequada a todos.</p>
+
+        <h3 data-referencia="Referência: DUL &amp; WEERDMEESTER. Ergonomia prática, 2012.">1.2. Posturas Neutras e Ajustes Biomecânicos</h3>
+
+        <p>O posto deve favorecer uma postura confortável, com os ombros relaxados, os antebraços apoiados quando apropriado, os punhos alinhados e os pés apoiados no piso ou em suporte adequado. Os ângulos articulares variam de acordo com a pessoa e a atividade; portanto, não devem ser tratados como valores rígidos universais.</p>
+
+        <h2 data-referencia="Referência: NR-17 (2022); ISO 9241-11 (2018).">2. Diretrizes para Superfícies de Trabalho e Periféricos</h2>
+
+        <p>O plano de trabalho deve possuir dimensões compatíveis com a tarefa e espaço suficiente para acomodar os dispositivos de entrada e visualização. Cadeiras ajustáveis e apoios adequados podem contribuir para uma postura mais confortável, desde que sejam regulados de acordo com as necessidades do usuário.</p>
+
+        <h3 data-referencia="Referência: ISO 9241-11: Usability: Definitions and concepts, 2018.">2.1. Posicionamento de Monitores e Periféricos</h3>
+
+        <p>O monitor deve ser posicionado para permitir uma visualização confortável, evitando reflexos e movimentos excessivos do pescoço. A distância e a altura dependem do tamanho da tela, da acuidade visual, da tarefa e das características individuais. O teclado e o mouse devem ficar ao alcance do usuário, permitindo que os ombros permaneçam relaxados.</p>
+
+        <section class="comparison-section">
+            <h3 data-referencia="Referência: Elaborado pela equipe (2026) com base na NR-17 e Iida (2016).">Quadro 3 — Comparação entre condições do posto de trabalho</h3>
+
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <caption>Elementos do mobiliário e ajustes ergonômicos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Elemento</th>
+                            <th scope="col">Condição inadequada</th>
+                            <th scope="col">Condição desejável</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cadeira</td>
+                            <td>Altura incompatível e apoio insuficiente.</td>
+                            <td>Assento ajustado e apoio adequado à região lombar.</td>
+                        </tr>
+                        <tr>
+                            <td>Mesa</td>
+                            <td>Altura que exige elevação dos ombros ou flexão excessiva.</td>
+                            <td>Superfície compatível com a tarefa e o usuário.</td>
+                        </tr>
+                        <tr>
+                            <td>Monitor</td>
+                            <td>Posição que exige flexão cervical excessiva.</td>
+                            <td>Altura e distância ajustadas para visualização confortável.</td>
+                        </tr>
+                        <tr>
+                            <td>Teclado e mouse</td>
+                            <td>Alcance excessivo e desvios dos punhos.</td>
+                            <td>Posicionamento que favoreça ombros relaxados e punhos alinhados.</td>
+                        </tr>
+                        <tr>
+                            <td>Pés</td>
+                            <td>Apoio insuficiente no piso.</td>
+                            <td>Apoio estável no piso ou em suporte adequado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="table-note">Fonte: elaborado pela equipe do projeto (2026), com base nos princípios gerais de ergonomia.</p>
+        </section>
+
+        <h2 data-referencia="Referência: Estimativa baseada em parâmetros antropométricos de Iida (2016).">3. Calculadora Antropométrica Computacional</h2>
+
+        <p>Insira a estatura do usuário para obter estimativas dimensionais preliminares. Os resultados são aproximações educativas e não substituem a avaliação individual do posto de trabalho.</p>
+
+        <div class="form-group">
+            <label for="altura">Altura do usuário (cm):</label>
+            <input type="number" id="altura" min="1" step="any" placeholder="Ex.: 175">
+        </div>
+
+        <button type="button" onclick="calcularPosto()">Calcular Parâmetros Antropométricos</button>
+
+        <div id="resultadoPosto" class="result" style="margin-top: 1.5rem;" aria-live="polite"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de PA | ETEC</p>
+    </footer>
+
+</body>
+</html>
